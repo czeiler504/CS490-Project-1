@@ -10,29 +10,28 @@ Due: Oct. 12, 2016
 -->
 <html>
     <head>
-        <title></title>
+        <title>Find A Movie!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
     </head>
     <body>
-        <header>
-            <img src="../images/movie.png" alt="movie reel">
-            <h1>Rent A Movie</h1>
-            <form action="">
-                <input type="search" placeholder="Search for a movie here...">
-                <button type="button">Search</button>
-            </form>
+        <header class = "header">
+            <img src="../images/movie.png" id= "moviereelphoto" alt="movie reel">
+            <span id = "sitename">Rent A Movie</span>
+            <div class="searchbox">
+                <input type="search" id="searchtextfield" value="Search for a movie here...">
+                <button type="button" id="searchbutton">Search</button>
+            </div>
         </header>
-        <div class="viewOptions">
-            Sort By:
-            <select>
+        <div class="viewoptions">
+            <span id ="sortby">Sort By:</span>
+            <select id="sortbyoptions">
                 <option value="year">Year</option>
                 <option value="rating">Rating</option>
             </select>
-            <img src="../images/grid_pressed.jpg" alt="grid view icon">
-            <img src="../images/list_pressed.jpg" alt="list view icon">
+            <img src="../images/grid_pressed.jpg" id="gridicon" alt="grid view icon">
+            <img src="../images/list_pressed.jpg" id="listicon" alt="list view icon">
         </div>
-        <div class="movies"></div>
+        <div class="moviesdisplay"></div>
     </body>
 </html>

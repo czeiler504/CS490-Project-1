@@ -7,12 +7,78 @@ and open the template in the editor.
     Created on : Oct 5, 2016, 3:47:58 PM
     Author     : Colin
 */
-
-header{
-    height: 30px;
-    width: 100%;
+@font-face {
+    font-family: Oleo;
+    src: url(Oleo.woff);
 }
 
-div.viewOptions{
-    
+header{
+    height:55px;
+    border:1pt solid lightgrey;
+    background-color:rgb(237,237,237);
+}
+
+#moviereelphoto {
+    width:45px;
+    margin-top:3px;
+    float:left;
+}
+
+header span {
+    float:left;
+    font-family:Oleo;
+    font-size:22px;
+    position:relative;
+    margin-left:10px;
+    line-height:55px; 
+    text-transform:uppercase;
+}
+
+div searchbox {
+    position:relative;
+    margin-left:35px;
+    width:470px;
+    top:-43px;
+    left:230px;
+}
+
+#searchtextfield {
+    width:405px;
+    height:25px;
+    border:1px solid grey;
+    color:grey;     
+    background-color:white;
+}
+
+#searchbutton {
+    color:white;
+    background-color: rgb(24,116,205);
+    height:30px;
+}
+
+div.viewoptions {
+    height:55px;
+}   
+
+sortby {
+    position:relative;
+    line-height:55px;
+    margin-left:5px;
+}
+
+sortbyoptions {
+    height:25px;
+}
+
+#listicon {
+    position:relative;
+    top:12px;
+    float:right;
+}
+
+#gridicon {
+    position:relative;
+    top:12px;
+    left:1055px;
+    top:9px;
 }
