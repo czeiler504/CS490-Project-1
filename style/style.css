@@ -1,12 +1,13 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Annie Chan      afc4z3@mail.umkc.edu
+Imon Stevenson  iasr43@mail.umkc.edu
+Colin Zeiler    czck4@mail.umkc.edu
+
+Kuhail CS490WD
+
+Due: Oct. 12, 2016
 */
-/* 
-    Created on : Oct 5, 2016, 3:47:58 PM
-    Author     : Colin
-*/
+
 @font-face {
     font-family: Oleo;
     src: url(Oleo.woff);
@@ -14,11 +15,11 @@ and open the template in the editor.
 
 header{
     height:55px;
-    border:1pt solid lightgrey;
+    border:1px solid lightgray;
     background-color:rgb(237,237,237);
 }
 
-#moviereelphoto {
+#moviereelphoto{
     width:45px;
     margin-top:3px;
     float:left;
@@ -30,7 +31,7 @@ header span {
     font-size:22px;
     position:relative;
     margin-left:10px;
-    line-height:55px; 
+    line-height:55px;
     text-transform:uppercase;
 }
 
@@ -43,42 +44,81 @@ div searchbox {
 }
 
 #searchtextfield {
-    width:405px;
-    height:25px;
-    border:1px solid grey;
-    color:grey;     
-    background-color:white;
+    width: 405px;
+    height: 25px;
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 12px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
 }
 
 #searchbutton {
-    color:white;
+    color: white;
     background-color: rgb(24,116,205);
-    height:30px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 div.viewoptions {
     height:55px;
-}   
+}
 
-sortby {
+#sortby {
     position:relative;
     line-height:55px;
     margin-left:5px;
 }
 
-sortbyoptions {
+#sortbyoptions {
     height:25px;
 }
 
 #listicon {
-    position:relative;
-    top:12px;
-    float:right;
+    position: relative;
+    top: 12px;
+    float: right;
 }
 
 #gridicon {
-    position:relative;
-    top:12px;
-    left:1055px;
-    top:9px;
+    position: relative;
+    left: 1055px;
+    top: 9px;
+}
+
+.text{
+    color: gray;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    width: 150px;
+}
+
+.suggestions{
+    position:absolute;
+    top:25px;
+    z-index:50;
+    border-color:lightgray;
+    background-color:white;
+    border-style:solid;
+    border-width: 1px;
+    width:150px;
+    overflow:auto;
+    display:none;
+}
+
+.sub_suggestions{
+    width:150px;
+}
+
+.sub_suggestions:hover{
+    background-color:gainsboro;
 }
