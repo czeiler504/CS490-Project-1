@@ -1,0 +1,124 @@
+/*
+Annie Chan      afc4z3@mail.umkc.edu
+Imon Stevenson  iasr43@mail.umkc.edu
+Colin Zeiler    czck4@mail.umkc.edu
+
+Kuhail CS490WD
+
+Due: Oct. 12, 2016
+*/
+
+@font-face {
+    font-family: Oleo;
+    src: url(Oleo.woff);
+}
+
+header{
+    height:55px;
+    border:1px solid lightgray;
+    background-color:rgb(237,237,237);
+}
+
+#moviereelphoto{
+    width:45px;
+    margin-top:3px;
+    float:left;
+}
+
+header span {
+    float:left;
+    font-family:Oleo;
+    font-size:22px;
+    position:relative;
+    margin-left:10px;
+    line-height:55px;
+    text-transform:uppercase;
+}
+
+div searchbox {
+    position:relative;
+    margin-left:35px;
+    width:470px;
+    top:-43px;
+    left:230px;
+}
+
+#searchtextfield {
+    width: 405px;
+    height: 25px;
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 12px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+}
+
+#searchbutton {
+    color: white;
+    background-color: rgb(24,116,205);
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+div.viewoptions {
+    height:55px;
+}
+
+#sortby {
+    position:relative;
+    line-height:55px;
+    margin-left:5px;
+}
+
+#sortbyoptions {
+    height:25px;
+}
+
+#listicon {
+    position: relative;
+    top: 12px;
+    float: right;
+}
+
+#gridicon {
+    position: relative;
+    left: 1055px;
+    top: 9px;
+}
+
+.text{
+    color: gray;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    width: 150px;
+}
+
+.suggestions{
+    position:absolute;
+    top:25px;
+    z-index:50;
+    border-color:lightgray;
+    background-color:white;
+    border-style:solid;
+    border-width: 1px;
+    width:150px;
+    overflow:auto;
+    display:none;
+}
+
+.sub_suggestions{
+    width:150px;
+}
+
+.sub_suggestions:hover{
+    background-color:gainsboro;
+}
