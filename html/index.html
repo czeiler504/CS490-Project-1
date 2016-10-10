@@ -13,15 +13,27 @@ Due: Oct. 12, 2016
         <title>Find A Movie!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <script src="../jss_files/movies.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     </head>
     <body>
         <header class = "header">
+
             <img src="../images/movie.png" id= "moviereelphoto" alt="movie reel">
+
             <span id = "sitename">Rent A Movie</span>
+
             <div class="searchbox">
-                <input type="search" id="searchtextfield" value="Search for a movie here...">
+
+                <input class="text" type="text" id="searchtextfield" placeholder="search for a movie here...">
+
                 <button type="button" id="searchbutton">Search</button>
+
+                <div id="suggestions_box" class="suggestions">
+
             </div>
+
         </header>
         <div class="viewoptions">
             <span id ="sortby">Sort By:</span>
