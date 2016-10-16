@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Movie Search</title>
+
+        <link rel="stylesheet" href="../style/main_css.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+        <!--Used for the formatting of the search function-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <!--Beginning of JavaScript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="../js/movies.js"></script>
+        <script src="../js/htmlMaker.js"></script>
+        <script src="../js/script.js"></script>
+
+
+    </head>
+
+    <!--Body HTML-->
+    <body>
+        <div id="wrapper">
+            <div class="site_header">
+                <img src="../images/movie.png" id="moviereel">
+                <span class="site_title">RENT A MOVIE</span>
+                <div class="input_stuff">
+                    <input type="text" placeholder="Search here..." name="movie_input" id="movie_input">
+                    <button id="search_button" class="search_button_class">Search</button>
+                </div>
+            </div>
+
+            <!--Sorting options by grid or list and year or rating-->
+            <div class="combo_box">
+                <button id="list_button" class="list_button_class"></button>
+                <button id="grid_button" class="grid_button_class"></button>
+                <span class="sortby_options">Sort By:</span>
+                <select class="sortby_options menu">
+                    <option value="year">Year</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+        </div>
+        <div class="movie_display"></div>
+    </body>
+</html>
