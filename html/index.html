@@ -17,10 +17,17 @@ Due: Oct. 12, 2016
         <script src="../js_files/movies.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="../js_files/htmlMaker.js"></script>
-         <script src="../js_files/movie_display.js"></script>
-          <script src="../js_files/movie_search.js"></script>
+        <script src="../js_files/movie_display.js"></script>
+        <script src="../js_files/movie_search.js"></script>
     </head>
     <body>
+        <!-- To make the header and viewoptions div fixed, they need to be wrapped around a div that is fixed while they're relative
+        Missing border bottom
+        Change font
+        Change movie_display into an ID and add a grid class
+        Style the grid and list class
+        -->
+      <div id="wrapper"> 
         <header class = "header">
 
             <img src="../images/movie.png" id= "moviereelphoto" alt="movie reel">
@@ -36,17 +43,20 @@ Due: Oct. 12, 2016
                 <div id="suggestions_box" class="suggestions">
 
             </div>
+            </div>
 
         </header>
+        
         <div class="viewoptions">
             <span id ="sortby">Sort By:</span>
             <select id="sortbyoptions">
                 <option value="year">Year</option>
                 <option value="rating">Rating</option>
             </select>
+            <img src="../images/list.jpg" id="listicon" alt="list view icon">
             <img src="../images/grid_pressed.jpg" id="gridicon" alt="grid view icon">
-            <img src="../images/list_pressed.jpg" id="listicon" alt="list view icon">
         </div>
-        <div class="moviesdisplay"></div>
+            </div>
+        <div id="moviesdisplay" class="grid"></div>
     </body>
 </html>
