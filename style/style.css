@@ -10,10 +10,15 @@ Due: Oct. 12, 2016
 
 @font-face {
     font-family: Oleo;
-    src: url(Oleo.woff);
+    src: url(../fonts/Oleo.woff);
 }
-
-header{
+#wrapper{
+    position: fixed;
+    height: 110px;
+    width: 99%;
+    border-bottom: 1px solid lightgray;  
+}
+.header{
     height:55px;
     border:1px solid lightgray;
     background-color:rgb(237,237,237);
@@ -25,7 +30,7 @@ header{
     float:left;
 }
 
-header span {
+.header span {
     float:left;
     font-family:Oleo;
     font-size:22px;
@@ -36,14 +41,16 @@ header span {
 }
 
 div searchbox {
-    position:relative;
     margin-left:35px;
     width:470px;
     top:-43px;
     left:230px;
+    vertical-align: middle;
 }
 
 #searchtextfield {
+    position: relative;
+    float: left;
     width: 405px;
     height: 25px;
     border: 1px solid gray;
@@ -51,21 +58,25 @@ div searchbox {
     background-color: white;
     margin-left: 10px;
     margin-top: 12px;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
     letter-spacing: 1.5px;
 }
 
 #searchbutton {
+    position: relative;
+    float: left;
+    vertical-align: middle;
     color: white;
     background-color: rgb(24,116,205);
-    height: 25px;
+    height: 29px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
     text-transform: uppercase;
+    margin-top: 12px;
 }
 
 div.viewoptions {
@@ -74,6 +85,7 @@ div.viewoptions {
 
 #sortby {
     position:relative;
+    
     line-height:55px;
     margin-left:5px;
 }
@@ -90,8 +102,12 @@ div.viewoptions {
 
 #gridicon {
     position: relative;
-    left: 1055px;
-    top: 9px;
+    float: right;
+    top: 12px;
+}
+
+#sitename {
+    font-family: Oleo;
 }
 
 .text{
@@ -116,9 +132,61 @@ div.viewoptions {
 }
 
 .sub_suggestions{
-    width:150px;
+    width:470px;
+    padding:5px;
 }
 
 .sub_suggestions:hover{
     background-color:gainsboro;
+    cursor:pointer;
 }
+
+.grid_photo{
+    margin-top:30px;
+    margin-left:30px;
+    height:200px;
+    width:200px;
+    border: 1px solid lightgray;
+}
+
+.grid_photo #movie_photo{
+    padding:5px;
+}
+
+#basic_info{
+    height:40px;
+    background-color:black;
+    opacity:40%;
+}
+
+.grid_photo:hover #basic_info{
+    height:120px;
+    background-color:black;
+    opacity:60%;
+}
+
+.grid_photo:hover #talent{
+    height:40px;
+    background-color:black;
+    opacity:70%;
+}
+
+#basic_info .title{
+    font: bold 14px "Times New Roman" white;
+}
+
+#basic_info .year{
+    font: 14px "Times New Roman" white;
+}
+
+.grid_photo img.hd{
+    height: 30px;
+    width: 40px;
+    top:15px;
+    left:15px;
+}
+
+div.starring{
+    font: 12px "Times New Roman" white;
+}
+
